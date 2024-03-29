@@ -1,0 +1,44 @@
+<div class="">
+    <div>
+        <div class="backgroundStraight"></div>
+        <div class="backgroundInclined"></div>
+        <div class="backgroundInclinedRight1"></div>
+        <div class="backgroundInclinedRight2"></div>
+        <div class="backgroundInclinedRight3"></div>
+        <div class="backgroundInclinedleft1"></div>
+        <div class="backgroundInclinedleft2"></div>
+        <div class="backgroundInclinedleft3"></div>
+        <div class="backgroundInclinedleft4"></div>
+
+
+
+
+
+
+
+    </div>
+    <section class="text-center pt-2 pb-3 ">
+        <h6 class="d-inline-block mx-auto rounded-pill py-2 px-3 bg-primary100 typeOf primary700 text-center mt-5 mb-2">
+            Our blog
+        </h6>
+    
+        <h2 class="fs64px my-3"> 
+            Resources and insights
+        </h2>
+        <h5 class="primary700 p-3">The latest industry news, interviews, technologies, and resources.</h5>
+    
+        <mat-form-field class="position-relative w-50" appearance="outline" class="p-3">
+            <mat-label><i class="fa-solid fa-magnifying-glass"></i> Search</mat-label>
+            <input [(ngModel)]="userInput" class=" " matInput placeholder="">
+          </mat-form-field>
+    
+    
+    
+    </section>
+    
+    
+    
+    
+    <app-blog-post-item [userSearch]="userInput"></app-blog-post-item>
+</div>
+

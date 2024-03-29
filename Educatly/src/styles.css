@@ -1,0 +1,178 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+**{
+    
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+
+      }
+
+
+.bg-gray900{background-color: rgba(16, 24, 40, 1);}
+.bg-gray500{background-color: rgba(102, 112, 133, 1);}
+.bg-primary700{background-color: rgba(105, 65, 198, 1);}
+.bg-primary100{background-color: rgba(244, 235, 255, 1);}
+.bg-primary300{background-color: rgba(214, 187, 251, 1);}
+.bg-primary50{background-color: rgba(249, 245, 255, 1);}
+.bg-gray300{background-color: rgba(208, 213, 221, 1);}
+.bg-primary200{background-color: rgba(233, 215, 254, 1);}
+.bg-primary900{background-color: rgba(66, 48, 125, 1);}
+
+
+.gray900{color: rgba(16, 24, 40, 1);}
+.gray500{color: rgba(102, 112, 133, 1);}
+.primary700{color: rgba(105, 65, 198, 1);}
+.primary100{color: rgba(244, 235, 255, 1);}
+.primary300{color: rgba(214, 187, 251, 1);}
+.primary50{color: rgba(249, 245, 255, 1);}
+.gray300{color: rgba(208, 213, 221, 1);}
+.primary200{color: rgba(233, 215, 254, 1);}
+.primary900{color: rgba(66, 48, 125, 1);}
+
+.typeOf{
+    font-size: 14px;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+.top-10{
+    top: 10px;
+}
+
+.fs64px{
+    font-size: 48px;
+}
+body{
+    overflow-x: hidden;
+}
+
+.backgroundStraight {
+    position: absolute;
+
+    top: 0;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    background: black;
+
+    z-index: -111;
+    background-color: rgba(249, 245, 255, 1);
+  }
+  .backgroundInclined {
+    position: absolute;
+
+    top: 0;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -111;
+    background-color: rgba(249, 245, 255, 1);
+  }
+
+  .backgroundInclinedRight1 {
+    position: absolute;
+
+    height: 70px;
+    bottom: 300px;
+    width: 450px;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -111;
+    background-color:  rgba(214, 187, 251, 1);
+  }
+
+  .backgroundInclinedRight2 {
+    position: absolute;
+    height: 70px;
+    width: 800px;
+    bottom: 230px;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -111;
+    background-color:  rgba(233, 215, 254, 1);
+  }
+
+  .backgroundInclinedRight3 {
+    position: absolute;
+
+    height: 70px;
+    bottom: 160px;
+    width: 450px;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -111;
+    background-color:   rgba(244, 235, 255, 1);
+  }
+
+  .backgroundInclinedleft1 {
+    position: absolute;
+
+    height: 70px;
+    bottom: 230px;
+    left: 0;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -11111;
+    background-color:   rgba(244, 235, 255, 1);
+  }
+  .backgroundInclinedleft2 {
+    position: absolute;
+
+    height: 70px;
+    bottom: 230px;
+    width: 1100px;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -1111;
+    background-color:   rgba(249, 245, 255, 1);
+  }
+  .backgroundInclinedleft3 {
+    position: absolute;
+
+    height: 70px;
+    bottom: 160px;
+    left: 0;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -1111;
+    background-color:  rgba(214, 187, 251, 1);
+  }
+  .backgroundInclinedleft4 {
+    position: absolute;
+
+    height: 70px;
+    bottom: 160px;
+    width: 1100px;
+    right: 0;
+    background: black;
+    transform-origin:right;
+    transform: skewy(-7deg) ;
+
+    z-index: -1111;
+    background-color:  rgba(249, 245, 255, 1);
+  }

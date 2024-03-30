@@ -16,7 +16,6 @@
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "/my-path/",
             "polyfills": [
               "zone.js"
             ],
@@ -26,17 +25,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css","./node_modules/@fortawesome/fontawesome-free/css/all.min.css","./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ngx-spinner/animations/ball-scale-multiple.css"
             ],
-            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.bundle.js"]
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "1mb",
                   "maximumError": "2mb"
                 },
                 {
@@ -92,6 +95,14 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "docs",
+            "netlifyToken": "N",
+            "siteId": "N"
           }
         }
       }

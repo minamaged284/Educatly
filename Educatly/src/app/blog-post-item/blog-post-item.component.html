@@ -1,16 +1,16 @@
 <div class="container mt-3 mx-auto">
     <div></div>
     <div class="row g-4  " >
-        <div *ngFor="let post of _PostInterface |search:userSearch | paginate: { id: 'postsPagination',
+        <div (click)="postUrl(post.url)" *ngFor="let post of _PostInterface |search:userSearch | paginate: { id: 'postsPagination',
         itemsPerPage: pageSize,
         currentPage: p,
-        totalItems: total }" class="col-lg-4 bg-transparent  px-2">
+        totalItems: total }" class="col-lg-4 bg-transparent  px-2 cursorPointer">
             <div style="height: 580px;" class=" p-3 bg-white shadow  d-flex flex-column justify-content-between" >
                 <div class="" >
 
-                    <img (click)="postUrl(post.url)" [src]="post.cover_image==null ?'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv1y2fu3s9qwuys2lanu3.png':post.cover_image " class="w-100 cursorPointer" alt="">
+                    <img  [src]="post.cover_image==null ?'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv1y2fu3s9qwuys2lanu3.png':post.cover_image " class="w-100 " alt="">
                     <p class="typeOf fw-bold primary700 mt-4">{{post.type_of}}</p>
-                    <h3 (click)="postUrl(post.url)" class="position-relative pe-3 my-4 cursorPointer">{{post.title}} <i class="bi bi-arrow-up-right fw-bold position-absolute top-10 end-0 fs-6"></i></h3>
+                    <h3  class="position-relative pe-3 my-4 ">{{post.title}} <i class="bi bi-arrow-up-right fw-bold position-absolute top-10 end-0 fs-6"></i></h3>
                     <p class="gray500 mt-4">{{post.description}}</p>
 
 

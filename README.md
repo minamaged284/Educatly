@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Live Demo
+https://silly-tulumba-ed3bfa.netlify.app/
+
+## To  run the project localy
+#1- clone the repo on your device
+#2- open Educatly-master/Educatly on your text editer
+#3- open cmd 
+#4- add the following packages using npm(npm i ngx-spinner, npm i ngx-pagination,npm i @fortawesome/fontawesome-free,npm i bootstrap,npm i bootstrap-icons and npm      i @angular/material).
+#5- now you can use  `ng serve -o` to run the project on a localhost
+

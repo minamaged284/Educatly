@@ -1,4 +1,4 @@
-<div class="container mt-3 mx-auto">
+<div class="container mt-3 mx-auto pb-5">
     <div></div>
     <div class="row g-4  " >
         <div (click)="postUrl(post.url)" *ngFor="let post of _PostInterface |search:userSearch | paginate: { id: 'postsPagination',
@@ -42,7 +42,7 @@
     <app-empty-state *ngIf="((_PostInterface|search:userSearch).length==0)&&isError==false"></app-empty-state>
     <app-error *ngIf="isError"></app-error>
 
-    <div class="d-flex justify-content-center mt-5">
+    <div *ngIf="!userSearch&&isError==false" class="d-flex justify-content-center mt-5">
         <pagination-controls  id="postsPagination"
         (pageChange)="pageChanged($event)"
         (pageBoundsCorrection)="pageChanged($event)"

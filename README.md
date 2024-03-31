@@ -33,6 +33,6 @@ https://silly-tulumba-ed3bfa.netlify.app/
 #1- clone the repo on your device
 #2- open Educatly-master/Educatly on your text editer
 #3- open cmd 
-#4- add the following packages using npm(npm i ngx-spinner, npm i ngx-pagination,npm i @fortawesome/fontawesome-free,npm i bootstrap,npm i bootstrap-icons and npm      i @angular/material).
+#4- add the following packages using npm(npm install,npm i ngx-spinner, npm i ngx-pagination,npm i @fortawesome/fontawesome-free,npm i bootstrap,npm i bootstrap-icons and npm and i @angular/material).
 #5- now you can use  `ng serve -o` to run the project on a localhost
 
